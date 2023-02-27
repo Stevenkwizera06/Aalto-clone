@@ -202,7 +202,7 @@ export default function Explore() {
               return (
                 <div
                   key={i}
-                  className="flex h-[82px] sm:h-[120px] md:h-40 border border-white"
+                  className="flex h-[82px] sm:h-[120px] md:h-40 border border-black"
                 >
                   <div className="flex-1  flex flex-col justify-end px-3 sm:px-6 pt-3 sm:pt-6 pb-2 sm:pb-4">
                     <h3 className="text--md mb-2 max-h-[50px] overflow-hidden">
