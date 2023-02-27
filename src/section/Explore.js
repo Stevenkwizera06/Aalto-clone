@@ -131,7 +131,7 @@ export default function Explore() {
     },
   ];
   return (
-    <div className="pt-14 pb-[72px] bg-white">
+    <div className="pt-14 pb-[72px] bg-[#2D2D2D]">
       <div className="relative">
         <Image className="w-full h-[400px]" alt="" src={explore} />
         <div className="absolute z-10 inset-x-0 bottom-0">
@@ -163,8 +163,8 @@ export default function Explore() {
             );
           })}
         </div>
-        <div className="mt-[72px] mb-14">
-          <h2 className="heading mb-4 font-medium text-center">
+        <div className="mt-[72px] mb-14 text-white">
+          <h2 className="heading mb-4 font-medium text-center text-white">
             Important quicklinks
           </h2>
           <div className="flex flex-col gap-4 sm:gap-0 justify-center sm:flex-row sm:justify-between">
@@ -189,7 +189,7 @@ export default function Explore() {
             ]}
           </div>
         </div>
-        <div className="mb-[72px]">
+        <div className="mb-[72px] text-white">
           <h2 className="heading mb-4 h-[66px] sm:h-auto">
             Explore our six schools
           </h2>
@@ -222,7 +222,7 @@ export default function Explore() {
             })}
           </div>
         </div>
-        <div className="md:flex md:flex-col md:gap-14 mb-14">
+        <div className="md:flex md:flex-col md:gap-14 mb-14 text-white">
           {campuses.map((el, i) => {
             return (
               <div
@@ -268,7 +268,7 @@ export default function Explore() {
             );
           })}
         </div>
-        <div className="flex flex-wrap content-start mb-14">
+        <div className="flex flex-wrap content-start mb-14 text-white">
           {blogs.map((el, i) => {
             return (
               <div
@@ -283,7 +283,7 @@ export default function Explore() {
             );
           })}
         </div>
-        <div>
+        <div className="text-white">
           <h2 className="heading text-center mb-4">Community voices</h2>
           <div className="flex flex-col sm:flex-row gap-4 sm;gap-10 items-center">
             {voices.map((el, i) => {

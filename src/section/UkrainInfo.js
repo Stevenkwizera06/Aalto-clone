@@ -4,10 +4,10 @@ import Image from "next/image";
 import Layout from "../components/layout/layout";
 
 
-
 const UkraineInfo = () => {
   return (
-    <Layout styles="px-32 py-20 bg-white text-black">
+    <Layout styles="px-32 py-20  text-white bg-[#2D2D2D]">
+    
       <h2 className="text-3xl pb-10">Information</h2>
       <div className="grid lg:grid-cols-2 gap-7 grid-cols-1">
         <CardInfo
@@ -21,6 +21,7 @@ const UkraineInfo = () => {
           paragraph="Information on effects of Coronavirus... "
         />
       </div>
+      
     </Layout>
   );
 };

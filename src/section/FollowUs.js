@@ -7,9 +7,9 @@ function FollowUs() {
   return (
     <>
       {/* section with yello icons */}
-      <Layout styles="bg-yellow-500 ">
+      <Layout styles="bg-yellow-500 bg-[#2D2D2D]">
         <div className="bg-gray1  relative z-30 space-y-3">
-          <div className="h-[25rem] bg-blue1 w-full text-black flex flex-col items-center justify-center relative z-10">
+          <div className="h-[25rem] bg-blue1 w-full text-white flex flex-col items-center justify-center relative z-10">
             <h2 className="font-bold text-6xl hover:pr-24 relative z-30">
               Follow Us
             </h2>
@@ -20,7 +20,7 @@ function FollowUs() {
                     <Link
                       key={index}
                       href="/"
-                      className="underline text-3xl hover:text-black hover:bg-white w-fit"
+                      className="underline text-3xl hover:text-white hover:bg-white w-fit"
                     >
                       {item},{" "}
                     </Link>

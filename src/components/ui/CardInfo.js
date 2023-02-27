@@ -32,7 +32,7 @@ const CardInfo = ({ title, paragraph, image }) => {
   return (
     <Link
       href={"/"}
-      className=" flex justify-between max-h-[9rem] overflow-clip group border border-black  text-black"
+      className=" flex justify-between max-h-[9rem] overflow-clip group border border-black  text-white"
     >
       <div className=" px-5 pb-5 pt-16">
         <h2 className="group-hover:bg-neutral-500 duration-300 w-fit text-lg font-semibold">

@@ -5,7 +5,7 @@ export default function University() {
   return (
     <>
       {/* bg section */}
-      <div className="">
+      <div className="bg-[#2D2D2D]">
         <section
           className="py-52"
           style={{
@@ -17,7 +17,7 @@ export default function University() {
           }}
         ></section>
 
-        <section className="-mt-56 max-w-[84rem] relative z-20 mx-auto lg:ml-24 bg-yellow-300 text-black">
+        <section className="-mt-56 max-w-[84rem] relative z-20 mx-auto lg:ml-24 bg-yellow-300 text-white">
           <div className="text-7xl font-bold py-10 px-10">
             Explore Aalto University
           </div>

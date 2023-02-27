@@ -17,10 +17,13 @@ export default function Research() {
     },
   ];
   return (
-    <div className="bg-white pt-14 pb-[96px]">
+    <div className="pt-14 pb-[96px] bg-[#2D2D2D]">
       <Wrapper>
-        <h2 className="heading mb-4"> Read about our research and donate </h2>
-        <p className="text mb-6">
+        <h2 className="heading mb-4 text-white">
+          {" "}
+          Read about our research and donate{" "}
+        </h2>
+        <p className="text mb-6 text-white">
           At Aalto University, we create the conditions for innovation, economic
           growth, employment and wellbeing. A gift to the university is an
           investment in a better future.

@@ -5,7 +5,7 @@ const Card1 = ({ image, title, paragraph, date, cat, className }) => {
   return (
     <Link
       href={"/"}
-      className={`block group  ${className} w-[432px] h-[368px] text-black bg-yellow-60000`}
+      className={`block group  ${className} w-[432px] h-[368px] text-white bg-yellow-60000`}
     >
       <div>
         <Image
