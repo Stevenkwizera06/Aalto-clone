@@ -1,9 +1,8 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
 import Layout from "../components/layout/layout";
-import Wrapper from '../components/Wrapper';
 
-function QuickLinks() {
+function Quicklinks() {
   return (
     <>
       {/* section with yellow icons */}
@@ -43,4 +42,4 @@ function QuickLinks() {
   );
 }
 
-export default QuickLinks
+export default Quicklinks

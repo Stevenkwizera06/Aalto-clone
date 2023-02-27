@@ -5,10 +5,9 @@ import FollowUs from "@/src/section/FollowUs";
 import Footer from "@/src/section/Footer";
 import FreeSpace from "@/src/section/FreeSpace";
 import Navbar from "@/src/section/Navbar";
-import QuickLinks from "@/src/section/QuickLinks";
+import Quicklinks from "@/src/section/Quicklinks";
 import Spotlight from "@/src/section/Spotlight";
 import Student from "@/src/section/Student";
-import Studies from "@/src/section/Studies";
 import UkraineInfo from "@/src/section/UkrainInfo";
 import University from "@/src/section/University";
 
@@ -21,7 +20,7 @@ export default function Home() {
         <Spotlight />
         <Events />
         <University />
-        <QuickLinks />
+        <Quicklinks />
         <Explore />
         <UkraineInfo />
         <FollowUs />
