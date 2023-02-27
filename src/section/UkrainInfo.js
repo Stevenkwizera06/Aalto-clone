@@ -4,11 +4,12 @@ import Image from "next/image";
 import Layout from "../components/layout/layout";
 
 
+
 const UkraineInfo = () => {
   return (
     <Layout styles="px-32 py-20 bg-white text-black">
       <h2 className="text-3xl pb-10">Information</h2>
-      <div className="grid grid-cols-2 gap-7">
+      <div className="grid lg:grid-cols-2 gap-7 grid-cols-1">
         <CardInfo
           image={thread}
           title="Ukraine War"

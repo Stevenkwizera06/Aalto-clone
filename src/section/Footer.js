@@ -1,9 +1,9 @@
 import React from "react";
 import Layout from "../components/layout/layout";
 
+
 export default function Footer() {
   return (
-    <>
       <layout styles="bg-white border-t-2 border-white py-5">
         <div className="max-w-[87rem] mx-auto ">
           <div className="grid grid-cols-4 text-black lg:grid-cols-4">
@@ -154,6 +154,6 @@ export default function Footer() {
           </div>
         </div>
       </layout>
-    </>
+   
   );
 }

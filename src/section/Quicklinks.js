@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
 import Layout from "../components/layout/layout";
+import Wrapper from '../components/Wrapper';
+
 function QuickLinks() {
   return (
     <>
@@ -9,7 +11,7 @@ function QuickLinks() {
         <section className="-mt-20 pb-32 pt-40">
           <div className="text-black space-y-7">
             <div className="text-center text-2xl">Important QuickLinks</div>
-            <div className="max-w-6xl mx-auto  flex justify-between lg:flex">
+            <div className="max-w-6xl mx-auto justify-between lg:flex-row flex-col">
               {[1, 2, 3].map((e, idx) => {
                 return (
                   <div className="flex items-center">

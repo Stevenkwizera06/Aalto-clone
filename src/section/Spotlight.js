@@ -4,10 +4,10 @@ import thread from "../../public/thread.jpg";
 import cap from "../../public/cap.jpg";
 import people from "../../public/people.jpg";
 import Button from "../components/ui/Button";
-import Wrapper from "../components/Wrapper";
 
 const Spotlight = ({ mainTitle, btnName, className, styles }) => {
   return (
+    
     
       <div className={`${className} lg:px-28 px-4 py-1 lg:py-28 text-black bg-white `}>
         <div className="relative">

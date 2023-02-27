@@ -3,9 +3,10 @@
 import React from "react";
 import Layout from "../components/layout/layout";
 
+
 function Explore() {
   return (
-    <>
+   
       <Layout styles="bg-white text-black py-20">
         <div className="max-w-[80rem] mx-auto flex md:flex-col justify-between items-center text-black">
           <div className="space-y-4">
@@ -53,7 +54,7 @@ function Explore() {
           })}
         </div>
       </Layout>
-    </>
+    
   );
 }
 export default Explore
