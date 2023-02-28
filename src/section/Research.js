@@ -31,7 +31,7 @@ export default function Research() {
         <div className="flex gap-4 flex-col sm:flex-row">
           {data.map((el, i) => {
             return (
-              <div key={i} className={`bg-white flex-1`}>
+              <div key={i} className={`bg- flex-1`}>
                 <div className="relative w-full aspect-[819/356]">
                   <Image alt="" src={el.img} className="object-cover" fill />
                 </div>

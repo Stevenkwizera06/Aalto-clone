@@ -5,7 +5,7 @@ import Layout from "../components/layout/layout";
 function Quicklinks() {
   return (
     <>
-      {/* section with yellow icons */}
+     
       <Layout styles="bg-white">
         <section className="-mt-20 pb-32 pt-40">
           <div className="text-black space-y-7">

@@ -6,7 +6,6 @@ import Layout from "../components/layout/layout";
 function FollowUs() {
   return (
     <>
-      {/* section with yello icons */}
       <Layout styles="bg-yellow-500 bg-[#2D2D2D]">
         <div className="bg-gray1  relative z-30 space-y-3">
           <div className="h-[25rem] bg-blue1 w-full text-white flex flex-col items-center justify-center relative z-10">

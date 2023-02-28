@@ -1,10 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-key */
-import CardInfo from "../components/ui/CardInfo";
-import thread from "../../public/thread.jpg";
-import Image from "next/image";
 import Layout from "../components/layout/layout";
-
 
 const UkraineInfo = () => {
   return (

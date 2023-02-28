@@ -1,13 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-key */
 import React from "react";
-import Layout from "../components/layout/layout";
-import Card1 from "../components/ui/Card1";
-import sciencedays from "../../public/sciencedays.png";
-import sdgs from "../../public/sdgs.png";
-import futures from "../../public/futures.jpg";
-import Button from "../components/ui/Button";
-// import Wrapper from '../components/Wrapper';
 
 const Events = () => {
   return (

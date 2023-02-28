@@ -4,7 +4,7 @@ import React from "react";
 export default function University() {
   return (
     <>
-      {/* bg section */}
+      
       <div className="bg-[#2D2D2D]">
         <section
           className="py-52"
