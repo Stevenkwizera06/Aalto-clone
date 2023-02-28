@@ -13,14 +13,14 @@ function FollowUs() {
             <h2 className="font-bold text-6xl hover:pr-24 relative z-30">
               Follow Us
             </h2>
-            <div className="relative z-30 mt-3">
+            <div className="relative z-30 mt-3 text-black">
               {["facebook", "twitter", "instagram", "linkedin"].map(
                 (item, index) => {
                   return (
                     <Link
                       key={index}
                       href="/"
-                      className="underline text-3xl hover:text-white hover:bg-white w-fit"
+                      className="underline text-3xl hover:bg-white w-fit"
                     >
                       {item},{" "}
                     </Link>

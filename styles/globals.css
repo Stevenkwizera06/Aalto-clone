@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
+
+.text--md {
+  @apply text-[21px] leading-[25px] text-white
+}
+.text {
+  @apply text-lg leading-[25px] text-white
+}
+.text--sm {
+  @apply text-base leading-[25px] text-white
+}
+.text--xs {
+  @apply text-sm leading-[18px] text-white
+}
+.heading {
+  @apply text-[28px] leading-[33px] text-white
+}
+.flex-flow {
+  flex-flow: column wrap;
+}
 @tailwind utilities;

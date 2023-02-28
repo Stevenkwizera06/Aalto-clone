@@ -12,10 +12,10 @@ module.exports = {
   theme: {
     extend: {
       
-      screens: {
-        md: "900px",
-        xl: "1200px",
-      },
+      // screens: {
+      //   md: "900px",
+      //   xl: "1200px",
+      // },
     },
     
   },

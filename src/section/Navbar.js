@@ -37,7 +37,7 @@ function Navbar() {
     },
   ];
   return (
-    <header className="px-4 md:pl-20 md:pr-14 flex  justify-between items-center h-[50px]  md:h-[110px] md:text-black">
+    <header className="px-4 md:pl-20 md:pr-14 flex  justify-between items-center h-[50px]  md:h-[110px] md:text-black z-50">
       <Image
         src={logo}
         alt=""
@@ -77,7 +77,7 @@ function Navbar() {
       <div className="flex items-center gap-4 md:hidden">
         <Image alt="" src={search} className="w-[20px] h-[20px] " />
         <div className="bg-white w-[1px] h-[26px]"></div>
-        <button className="flex items-center gap-2 p-1 hover:bg-[#4A4A4A]">
+        <button className="flex text-white items-center gap-2 p-1 hover:bg-[#4A4A4A]">
           Menu
         </button>
       </div>

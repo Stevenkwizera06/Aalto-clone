@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Wrapper from "../components/Wrapper";
-import explore from "../../public/explore.jpg";
+import explore from "/public/explore.jpg";
 import pencil from "../../public/pencil.webp";
 import school from "../../public/school.webp";
 import campus from "../../public/campus.webp";
@@ -9,6 +9,12 @@ import campus2 from "../../public/campus2.webp";
 import blog from "../../public/blog.webp";
 import right from "../../public/right.svg";
 import voice from "../../public/voice.jpg";
+import Aalto from "../../public/Aalto-vision.jpeg";
+import UniversityStudents from "../../public/university-students.jpeg";
+import model from "../../public/model.jpeg";
+import garden from "../../public/garden-plot.jpeg";
+import forest from "../../public/forest.jpeg";
+
 
 export default function Explore() {
   const data = [
@@ -88,31 +94,31 @@ export default function Explore() {
       text: "Building Finland's first quantum computer. Photo: Aalto University / Mikko Raskinen.",
     },
     {
-      img: blog,
+      img: Aalto,
       text: "Creative sustainability. Photo: Aalto University / Mikko Raskinen.",
     },
     {
-      img: blog,
+      img: UniversityStudents,
       text: "Architectural gems of Otaniemi. Photo: Aalto University / Tuomas Uusheimo.",
     },
     {
-      img: blog,
+      img: model,
       text: "Trail to the Laajalahti Nature Reserve and one of South Finland's best birdwatching bay. Photo: Aalto University.",
     },
     {
-      img: blog,
+      img: Aalto,
       text: "Developing a connected campus. Photo: Aalto University / Jaakko Kahilaniemi.",
     },
     {
-      img: blog,
+      img: UniversityStudents,
       text: "Developing a connected campus. Photo: Aalto University / Jaakko Kahilaniemi.",
     },
     {
-      img: blog,
+      img: garden,
       text: "One of the most international universities in Europe. Photo: Aalto Design Factory / Bijan Mokhtari.",
     },
     {
-      img: blog,
+      img: forest,
       text: "Educating future thought-leaders. Photo: Aalto Vision Forum / Lasse Lecklin.",
     },
   ];
@@ -136,7 +142,7 @@ export default function Explore() {
         <Image className="w-full h-[400px]" alt="" src={explore} />
         <div className="absolute z-10 inset-x-0 bottom-0">
           <Wrapper>
-            <h2 className="text-[30px] leading-[36px] sm:text-[56px] sm:leading-[66px] bg-yellow-400 pt-6 px-6 md:px-10 md:pt-10 pb-20 border-b border-b-black text-white md:text-[75px] font-bold md:leading-[88px]">
+            <h2 className="text-[30px] leading-[36px] sm:text-[56px] sm:leading-[66px] bg-yellow-400 pt-6 px-6 md:px-10 md:pt-10 pb-20 border-b border-b-white text-white md:text-[75px] font-bold md:leading-[88px]">
               Explore Aalto University
             </h2>
           </Wrapper>
@@ -164,7 +170,7 @@ export default function Explore() {
           })}
         </div>
         <div className="mt-[72px] mb-14 text-white">
-          <h2 className="heading mb-4 font-medium text-center text-white">
+          <h2 className="mb-4 font-medium text-center text-white">
             Important quicklinks
           </h2>
           <div className="flex flex-col gap-4 sm:gap-0 justify-center sm:flex-row sm:justify-between">
@@ -202,7 +208,7 @@ export default function Explore() {
               return (
                 <div
                   key={i}
-                  className="flex h-[82px] sm:h-[120px] md:h-40 border border-black"
+                  className="flex h-[82px] sm:h-[120px] md:h-40 border border-white"
                 >
                   <div className="flex-1  flex flex-col justify-end px-3 sm:px-6 pt-3 sm:pt-6 pb-2 sm:pb-4">
                     <h3 className="text--md mb-2 max-h-[50px] overflow-hidden">

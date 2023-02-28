@@ -1,63 +1,77 @@
-import Layout from "../components/layout/layout";
-import Card1 from "../components/ui/Card1";
-import thread from "../../public/thread.jpg";
-import cap from "../../public/cap.jpg";
-import people from "../../public/people.jpg";
-import Button from "../components/ui/Button";
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-key */
+import React from "react";
 
-const Spotlight = ({ mainTitle, btnName, className, styles }) => {
+export default function SpotLight() {
   return (
-    <div
-      className={`${className} lg:px-28 px-4 py-1 lg:py-28 text-white bg-bg-[#2D2D2D] `}
-    >
-      <div className="relative">
-        <h2 className="text-3xl">Sportilight</h2>
-        <h3 className="text-lg pt-3">
-          Find more current news and interesting events on the{" "}
-          <span className="underline hover:bg-neutral-700 text-white">
-            News and events page.
-          </span>
-        </h3>
-        <Button
-          name={"see All news about Aalto University"}
-          link="/"
-          className={
-            "absolute text-sm hover:border-transparent h right-0 bottom-10 border "
-          }
-        />
+    <section className="bg-[#2D2D2D] pb-20 px-4 md:max-w-7xl md:mx-auto md:px-20">
+      <div className="max-w-[87rem] mx-auto pt-20 flex md:flex-row justify-between md:items-start items-center text-white">
+        <div className="space-y-3">
+          <h1 className="text-[1.7rem]">Spotlight</h1>
+          <p className="text-xl md:text-[1.3rem]">
+            Find more current news and interesting events on the News and events
+            page.
+          </p>
+        </div>
+        <div>
+          <button className="border hidden md:block border-white py-2 px-8 text-sm tracking-wide rounded-full">
+            See all Aalto University news
+          </button>
+        </div>
       </div>
-
-      <div className="flex gap-5 pt-5 flex-col lg:flex-row">
-        <Card1
-          image={thread}
-          title="Shrinking From the heat"
-          paragraph={"Reactive fabrics respond to changes in temperature"}
-          date={"21.2.2023"}
-          cat={"News"}
-          className={styles}
-        />
-        <Card1
-          image={cap}
-          title="Knit an Aalto hat for yourself or a friend!"
-          paragraph={
-            "Follow Marja Niemi and Outi Elina Kansanen’s knitting pattern to make a lovely gift for someone special"
-          }
-          date={"21.2.2023"}
-          cat={"News"}
-          className={styles}
-        />
-        <Card1
-          image={people}
-          title={
-            "Aalto Startup Center makes global top three in 2021-2022 university business accelerator ranking"
-          }
-          date={"21.2.2023"}
-          cat={"News"}
-          className={styles}
-        />
+      <div className="max-w-[87rem]  mx-auto grid grid-cols-1 gap-5 md:grid-cols-3 pt-5 ">
+        {[
+          {
+            title:
+              "https://www.aalto.fi/sites/g/files/flghsv161/files/styles/2_3_690w_300h_d/public/2023-02/PXL_20220622_103655210_0.jpg?h=419eefd5&itok=NNEygIOY",
+            link: [
+              "Shrinking from the heat",
+              "Reactive fabrics respond to changes in templerature",
+            ],
+          },
+          {
+            title:
+              "https://www.aalto.fi/sites/g/files/flghsv161/files/styles/2_3_1380w_600h_n/public/2023-02/pipot4_1.jpg?h=a0adc964&itok=ujnsm-1E",
+            link: [
+              "Knit an Aalto hat for yourself or a friend!",
+              "Follow Marja Niemi and Outi Elina Kansanen's knitting pattern to make a lovely gift for someone special",
+            ],
+          },
+          {
+            title:
+              "https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_914w_ah_n/public/2022-03/SLUSH2019_21-11-2019_photo_Mikko_Raskinen_038.jpg?itok=J87hxKLs",
+            link: [
+              "Aalto Startup Center makes global top three in 2021-2022 university business accelerator ranking",
+              "UBI Global World Benchmark Study ranks top",
+            ],
+          },
+        ].map((e, idx) => {
+          return (
+            <div className="text-white border-2 border-white flex h-full content-start flex-col justify-between">
+              <img
+                src={e.title}
+                alt=""
+                className={`${
+                  idx === 2 ? "mb-5" : ""
+                } h-52 md:h-36 object-cover object-center aspect-video`}
+              />
+              <div className="px-7  md:px-3 md:pt-4 space-y-3 md:space-y-6">
+                {e.link.map((val, ix) => {
+                  return (
+                    <p className={`${ix === 0 ? "text-xl" : ""} `}>{val}</p>
+                  );
+                })}
+              </div>
+              <div className="px-7 md:px-3 md:mt-5 mb-3">
+                <p>25-1 20231 News</p>
+              </div>
+            </div>
+          );
+        })}
+        <button className="border  md:hidden border-white text-white py-2 px-4 text-sm tracking-wide rounded-full">
+          See all Aalto University news
+        </button>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default Spotlight;
+}
