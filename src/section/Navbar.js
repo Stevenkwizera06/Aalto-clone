@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { BiLockAlt, BiSearch } from "react-icons/bi";
 import { CiHeart } from "react-icons/ci";
@@ -23,7 +25,9 @@ const Navbar = () => {
   return (
     <div className="">
       <div className="fixed inset-x-0 top-0 z-50 bg-[#252525] flex justify-between items-center px-14 h-[110px]">
-        <logo className="text-white"/>
+        <div>
+          <Image src={logo} className="text-white" />
+        </div>
         <div className="hidden md:flex items-center gap-10">
           <ul className="flex items-center gap-10">
             <li>
@@ -47,12 +51,14 @@ const Navbar = () => {
           </ul>
           <ul className="flex items-center gap-10">
             <li className="flex items-center gap-2">
-              <IoGlobeSharp />
+              <IoGlobeSharp className=" text-white" />
               <span className="text-white">EN</span>
-              <span class="material-symbols-outlined text-white">expand_more</span>
+              <span class="material-symbols-outlined text-white">
+                expand_more
+              </span>
             </li>
             <li className="flex items-center gap-2">
-              <BiSearch />
+              <BiSearch className="text-white" />
               <span className="text-white">Search</span>
             </li>
             <li
@@ -65,8 +71,7 @@ const Navbar = () => {
                 </div>
               ) : (
                 <div className="cursor-pointer flex gap-1 items-center">
-                  <span class="material-symbols-outlined">close</span>
-                  <span className="text-white">Close Menu</span>
+                  <span className="text-white">Close </span>
                 </div>
               )}
             </li>

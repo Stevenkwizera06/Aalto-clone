@@ -7,7 +7,7 @@ import right from "/public/right.svg";
 function Student() {
   return (
     <Wrapper>
-      <div className="relative">
+      <div className="relative md:mt-24">
         <div className="bg-black text-white py-6 xl:max-w-[680px] xl:absolute -bottom-10 left-14 z-10">
           <Wrapper small>
             <h1 className="text-[34px] leading-[42px] mb-4">
