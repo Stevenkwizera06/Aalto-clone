@@ -85,10 +85,10 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="w-full">
+        <div className="w-9/12">
           <div className="w-full fixed inset-0 z-30 bg-black opacity-75"></div>
           <div className="fixed top-[110px] inset-y-0 overflow-x-scroll right-0 w-full max-w-[1350px] m-0 bg-white z-[500]">
-            <div className="flex justify-between w-full items-center px-4">
+            <div className="flex justify-between w-9/12 items-center px-4">
               <div className="flex gap-4 items-center py-4">
                 <div className="flex flex-col items-center hover:bg-[#e3e3e3] p-2">
                   <CgMenuGridR size={40} />
@@ -399,7 +399,7 @@ const Navbar = () => {
                         return JSON.stringify(prevDataArray);
                       })
                     }
-                    className="flex justify-between items-center w-full text-[28px] leading-[33px] pr-4 pl-4 custom-shadow font-bold hover:bg-[#e3e3e3]"
+                    className="flex justify-between items-center w-9/12 text-[28px] leading-[33px] pr-4 pl-4 custom-shadow font-bold hover:bg-[#e3e3e3]"
                   >
                     <span className="">{item.title}</span>
                     {JSON.parse(currentData).includes(item.title) ? (

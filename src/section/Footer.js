@@ -8,7 +8,7 @@ import Button from "../components/ui/Button";
 
 const Footer = () => {
   return (
-    <div className="border-t bg-gray1 text-white md:px-32 px-5 py-10 relative z-30">
+    <div className="border-t  text-white md:px-32 px-5 py-10 relative z-30">
       <div className=" md:grid space-y-5 md:space-y-0 grid-cols-4 pb-10 ">
         <div>
           <Link href={"/"} className="inline-flex pb-10">
